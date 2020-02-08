@@ -4,9 +4,9 @@ export LIB_DIR
 
 all: build
 
-build: main.o
-	
-main.o: main.cpp $(LIB_DIR)/libUtils.a
+build: main.cpp 
+	# Build the static library	
+	make -C $(UTILS_DIR)	
 	# Compile with static library!	
 	g++ -o main.o main.cpp $(LIB_DIR)/libUtils.a -I$(UTILS_DIR)
 
