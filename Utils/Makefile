@@ -9,6 +9,7 @@ libUtils.a: $(patsubst %.cpp, %.o, $(wildcard ./*.cpp))
 	echo "Lib directory is: $(LIB_DIR)"
 	ar rcs $@ $^
 	mv $@ $(LIB_DIR)/$@
+	make clean
 
 # With the -c flag, g++ skips the linking step
 # Without -c, g++ tries to search for a 'main' function

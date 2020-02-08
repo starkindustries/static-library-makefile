@@ -2,16 +2,13 @@ LIB_DIR = $(realpath ./Libs)
 UTILS_DIR = $(realpath ./Utils)
 export LIB_DIR
 
-hellomake:
-	g++ -o hello.o main.cpp ./Utils/*.cpp -I$(UTILS_DIR)
-	make -C $(UTILS_DIR)
-
-staticMake:
+all:
 	# Compile with static library!
-	g++ -o helloStatic.o main.cpp $(LIB_DIR)/libUtils.a -I$(UTILS_DIR)
+	make -C $(UTILS_DIR)
+	g++ -o main.o main.cpp $(LIB_DIR)/libUtils.a -I$(UTILS_DIR)
 
 run: 
-	./hello.o
+	./main.o
 
 clean:
 	# IMPORTANT: 
