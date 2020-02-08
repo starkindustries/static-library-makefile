@@ -1,8 +1,16 @@
 # Static Library Makefile 
 
+This program creates a static library out of all files within the Utils directory and links it to the main program in main.cpp. Any files that are added to the Utils directory are automatically compiled and added to the static library without needing to update the Makefile. Makefiles utilize `realpath` directory variables to avoid issues with relative paths.
+
+## Commands
+* compile: `make`
+* run: `make run`
+* clean: `make clean`
+
 ## Make Documentation and Useful Tutorials
 https://www.gnu.org/software/make/manual/make.html
-
+http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+https://www.geeksforgeeks.org/static-vs-dynamic-libraries/
 
 ## Automatic Variables
 https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables
