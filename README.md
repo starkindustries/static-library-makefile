@@ -1,5 +1,9 @@
 # Static Library Makefile 
 
+## Make Documentation and Useful Tutorials
+https://www.gnu.org/software/make/manual/make.html
+
+
 ## Automatic Variables
 https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables
 
