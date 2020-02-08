@@ -11,9 +11,7 @@ This program creates a static library out of all files within the Utils director
 https://www.gnu.org/software/make/manual/make.html
 http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
 https://www.geeksforgeeks.org/static-vs-dynamic-libraries/
-
-YouTube: Introduction to Makefiles (Paul Programming)
-https://www.youtube.com/watch?v=_r7i5X0rXJk
+[YouTube: Introduction to Makefiles (Paul Programming)](https://www.youtube.com/watch?v=_r7i5X0rXJk)
 
 ## Automatic Variables
 https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables
