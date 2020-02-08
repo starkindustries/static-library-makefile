@@ -1,4 +1,4 @@
-all: libs
+all: libs	
 	echo "$@: $^"
 
 libs: libUtils.a
@@ -6,8 +6,9 @@ libs: libUtils.a
 
 libUtils.a: $(patsubst %.cpp, %.o, $(wildcard ./*.cpp))
 	echo "$@: $^"
+	echo "Lib directory is: $(LIB_DIR)"
 	ar rcs $@ $^
-	# mv $@ $(LIB_DIR)
+	mv $@ $(LIB_DIR)/$@
 
 # With the -c flag, g++ skips the linking step
 # Without -c, g++ tries to search for a 'main' function

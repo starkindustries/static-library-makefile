@@ -1,3 +1,6 @@
+LIB_DIR = $(realpath ./Libs)
+export LIB_DIR
+
 hellomake:
 	g++ -o hello.o main.cpp ./Utils/*.cpp -I./Utils
 	make -C ./Utils
@@ -17,4 +20,5 @@ clean:
 	# and arguments and never prompt, so that the command succeeds even when the 
 	# files are missing and make doesn't complain.
 	rm -f *.out *.o
+	rm -f ./Libs/*
 	make -C ./Utils clean
